@@ -11,9 +11,11 @@
   <input placeholder="Search team names, descriptions and abstracts" class="form-control" ng-model="criteria"></input>
   <ul>
     <li ng-repeat="entry in entries | filter:criteria">
-      <b><a href="http://{{entry.Year}}.igem.org/Team:{{entry.Team}}" target="_blank">{{entry.Team}}: {{entry.Year}}</a></b> <b>{{entry.Description}}</b>
+      <b><a href="http://{{entry.Year}}.igem.org/Team:{{entry.Team}}" target="_blank">{{entry.Team}}: {{entry.Year}}</a></b> <b ng-bind-html="entry.Description | unsafe" ></b>
       <ul>
-        <li>{{entry.Abstract}}</li>
+        <li>
+          <p ng-bind-html="entry.Abstract | unsafe"></p>
+        </li>
       </ul>
     </li>
   </ul>
