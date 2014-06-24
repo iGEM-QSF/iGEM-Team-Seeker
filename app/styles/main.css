@@ -4,6 +4,23 @@ body {
   padding-bottom: 20px;
 }
 
+.tabs{
+  font-size: 1.5em;
+}
+
+.tabs a{
+  margin-right: 1em;
+}
+
+a.active{
+  color:black;
+  font-size: 1.8em;
+}
+
+a.text-muted:hover{
+  color:#999999
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
