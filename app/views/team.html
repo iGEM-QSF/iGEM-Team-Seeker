@@ -3,16 +3,15 @@
     <h4>by <a href="http://www.aaltohelsinki.com/index_en.html">Aalto-Helsinki</a></h4>
   </div>
   <div class ="tabs">
-    <a href="http://igem-qsf.github.io/BioBrick-Seeker/dist/" class="text-muted">BioBrick Seeker</a>
-    <a href="http://igem-qsf.github.io/iGEM-Team-Seeker/dist/" class="active">iGEM Team Seeker</a>
+    <a href="http://igem-qsf.github.io/iGEM-Team-Seeker/dist/" class="active">Team Seeker</a>
+    <a href="http://igem-qsf.github.io/BioBrick-Seeker/dist/" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-right"></span> Search BioBricks</a>
   </div>
-  <br>
   <i>Search through past iGEM teams from 2008 to 2013.</i>
   <br>
 </div>
 
 <div>
-  <input placeholder="Search team names, descriptions and abstracts" class="form-control" ng-model="criteria"></input>
+  <input placeholder="Search team names, descriptions and abstracts. eg. 'plastic'" class="form-control" ng-model="criteria"></input>
   <ul>
     <li ng-repeat="entry in entries | filter:criteria">
       <b><a href="http://{{entry.Year}}.igem.org/Team:{{entry.Team}}" target="_blank">{{entry.Team}}: {{entry.Year}}</a></b> <b>{{entry.Description}}</b>
