@@ -1,7 +1,29 @@
 /* Space out content a bit */
+
+a:link {color:#399f70;}
+a:visited {color:#399f70;}
+a:hover {color:#c4e9d6;
+         text-decoration:none;}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  background-image: url("../images/kasi_vectored_lightgreen.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-size: 40%;
+}
+
+@media screen and (min-width : 1224px) {
+  body {
+    background-size: 500px;
+  }
+}
+
+.form-control {
+  background-color: transparent;
 }
 
 .tabs{
