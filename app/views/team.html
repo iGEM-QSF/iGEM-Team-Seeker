@@ -6,12 +6,14 @@
     <a href="http://igem-qsf.github.io/iGEM-Team-Seeker/dist/" class="active">Team Seeker</a>
     <a href="http://igem-qsf.github.io/BioBrick-Seeker/dist/" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-right"></span> Search BioBricks</a>
   </div>
-  <i>Search through past iGEM teams from 2008 to 2013.</i>
   <br>
+  <i>Search through past iGEM teams from 2008 to 2013.</i>
+  <br><br>
 </div>
 
 <div>
   <input placeholder="Search team names, descriptions and abstracts. eg. 'plastic'" class="form-control" ng-model="criteria"></input>
+  <br>
   <ul>
     <li ng-repeat="entry in entries | filter:criteria">
       <b><a href="http://{{entry.Year}}.igem.org/Team:{{entry.Team}}" target="_blank">{{entry.Team}}: {{entry.Year}}</a></b> <b>{{entry.Description}}</b>
