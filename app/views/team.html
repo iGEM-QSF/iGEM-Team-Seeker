@@ -12,10 +12,10 @@
 </div>
 
 <div>
-  <input placeholder="Search team names, descriptions and abstracts. eg. 'plastic'" class="form-control" ng-model="criteria"></input>
+  <input placeholder="Search team names, descriptions and abstracts. eg. 'plastic'" class="form-control" ng-model="criteria.Abstract"></input>
   <br>
   <ul>
-    <li ng-repeat="entry in entries | filter:criteria">
+    <li ng-repeat="entry in entries | filter:criteria.Abstract | orderBy:phraseOrder">
       <b><a href="http://{{entry.Year}}.igem.org/Team:{{entry.Team}}" target="_blank">{{entry.Team}}: {{entry.Year}}</a></b> <b>{{entry.Description}}</b>
       <ul>
         <li>{{entry.Abstract}}</li>
