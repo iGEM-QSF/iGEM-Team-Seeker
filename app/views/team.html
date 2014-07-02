@@ -12,13 +12,17 @@
 </div>
 
 <div>
+  <form ng-submit="phraseSearch()">
   <input placeholder="Search team names, descriptions and abstracts. eg. 'plastic'" class="form-control" ng-model="criteria.Abstract"></input>
+  <input type="submit" id="submit" value="Submit">
+  </form>
   <br>
   <ul>
-    <li ng-repeat="entry in entries | filter:criteria.Abstract | orderBy:phraseOrder">
+    <li ng-repeat="entry in entries | orderBy:getScore">
       <b><a href="http://{{entry.Year}}.igem.org/Team:{{entry.Team}}" target="_blank">{{entry.Team}}: {{entry.Year}}</a></b> <b>{{entry.Description}}</b>
       <ul>
         <li>{{entry.Abstract}}</li>
+        <li>{{entry.Score}}</li>
       </ul>
     </li>
   </ul>
