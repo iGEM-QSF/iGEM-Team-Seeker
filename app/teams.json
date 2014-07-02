@@ -308,6 +308,7 @@
 {
 "Team":"Rice_University",
 "Year":2008,
+"Description":"No description",
 "Abstract":"Resveratrol, a phytochemical used for defense in plants, has been implicated as a natural product that increases life span and prevents cancer. Unfortunately, significant levels of resveratrol are present in only a small number of foods, such as red wine, peanuts, and blueberries. To create an alternative source for resveratrol consumption, we are introducing a biosynthetic pathway for this compound into a brewing strain of <i>Saccharomyces cerevisiae</i> and examining whether this strain can be engineered to produce resveratrol during beer fermentation. Given the high worldwide consumption of beer and the low cost of production, unfiltered beer brewed using our genetically modified <i>S. cerevisiae</i> should provide a cost-effective source of pharmacologically-active resveratrol"
 },
 {
@@ -343,6 +344,7 @@
 {
 "Team":"UC_Berkeley",
 "Year":2008,
+"Description":"No Description",
 "Abstract":"In an effort to optimize the manufacture of parts, we have designed Clonebots - a collection of devices and strains that aid in the synthesis and analysis of new parts. Our team has programmed Clonebots to perform processes critical for efficient manufacture of biological products. We created systems capable of in vivo genetic manipulations and constructed an inducible self-lysis device designed to reclaim a variety of products without the need for conventional methods of lysis. By replacing traditional mechanical operations with biologically encoded alternatives, Clonebots are capable of accomplishing many operations with a single automated liquid handling unit - a cost-effective, BioCAD-friendly approach to large-scale projects"
 },
 {
