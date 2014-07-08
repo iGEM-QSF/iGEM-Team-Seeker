@@ -22,6 +22,12 @@ body {
   }
 }
 
+@media screen and (max-width : 599px) {
+  body {
+    background-size: 1px;
+  }
+}
+
 .form-control {
   background-color: transparent;
 }
