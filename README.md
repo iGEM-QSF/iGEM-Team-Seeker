@@ -11,3 +11,11 @@ Installation:
 * `git clone` the repository
 * Run `npm install` in root directory of the project
 * Use `grunt serve` to run the service locally
+
+Useful commands for installation:
+* Update npm to latest version `npm install -g npm`
+* `npm install grunt-cli -g`
+* `npm install bower -g`
+* `bower install`
+* `grunt serve`
+* `grunt build`
